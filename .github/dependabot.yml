@@ -8,9 +8,6 @@ updates:
   schedule:
     interval: daily
   groups:
-    Orleans:
-      patterns:
-        - "Microsoft.Orleans*"
     Azure:
       patterns:
         - "Azure*"
@@ -27,6 +24,11 @@ updates:
     Extensions:
       patterns:
         - "Microsoft.Extensions*"
+      exclude-patterns:
+        - "Microsoft.Extensions.AI*"
+    ExtensionsAI:
+      patterns:
+        - "Microsoft.Extensions.AI*"
     Web:
       patterns:
         - "Microsoft.AspNetCore*"
@@ -41,3 +43,6 @@ updates:
     ProtoBuf:
       patterns:
         - "protobuf-*"
+    Spectre:
+      patterns:
+        - "Spectre.Console*"
